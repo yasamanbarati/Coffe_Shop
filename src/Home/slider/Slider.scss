@@ -1,0 +1,137 @@
+$--color-01: rgb(242,199,129);
+$--color-02: rgb(255,140,145);
+$--color-03: rgb(127,92,120);
+@mixin boxRounded ($redius, $border, $shadow) {
+    border-radius: $redius ;
+    border: $border;
+    box-shadow: $shadow;
+}
+@mixin headingTag ($size,$wight,$color) {
+    font-size: $size;
+    font-weight: $wight;
+    color: $color;
+}
+.swiper{
+    &-button-prev,
+    &-button-next{
+        bottom: 20% !important;
+        top: auto !important;
+        right: 45px !important;
+        left: auto;
+        &::after{
+            font-size: 18px !important;
+            color: black;
+        }
+    }
+    &-button-next{
+        right: 10px !important;
+    }
+    &-pagination{
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        top: 25%;
+        right: 45px;
+        left: auto !important;
+        &-bullet{
+            margin: 0px;
+            margin-bottom: 20px !important;
+            background-color: black;
+            width: 6px;
+            height: 6px;
+            &-active{
+                background-color: $--color-02;
+                position: relative;
+                &::after{
+                    position: absolute;
+                    content: "";
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    border: 1px solid $--color-02;
+                    top: -7px;
+                    right: -7px;
+                }
+            }
+        }
+    }
+.slider{
+        height: 80vh;
+        &_info{
+            &_img{
+                @include boxRounded(50%,none,0px 0px 1px 2px #c6c6c6);
+                padding: 10px !important;
+                height: 300px;
+                img{
+                    border-radius: 50%;
+                }
+            }
+            &_text{
+                &_star{
+                    &_svg{
+                        border-right: 1px #bcbcbc solid;
+                        padding: 0px 5px;
+                        svg{
+                            fill: $--color-02;
+                            width: 0.8rem;
+                            height: 0.8rem;
+                            margin-right: 5px;
+                        }
+                    }
+                    &_Num{
+                        padding: 0px 5px;
+                        h4{
+                            @include headingTag(12px,400,$--color-02);
+                            margin-bottom: 5px;
+                        }
+                    }
+                }
+                &_name{
+                    h2{
+                        @include headingTag(1.5rem,600,black);
+                        margin-bottom: 5px;
+                    }
+                }
+                &_discount{
+                    h3{
+                        @include headingTag(1.4rem,400,black);
+                        margin-bottom: 5px;
+                    }
+                }
+                &_price{
+                    .discountPrice,
+                    .price{
+                        @include headingTag(1.7rem,700,black);
+                        margin-bottom: 5px;
+                    }
+                    .price{
+                        color: #bcbcbc;
+                        text-decoration-line: line-through;
+                    }
+                }
+                &_button{
+                    .buyButton,
+                    .infoBoutton{
+                        padding: 5px 20px;
+                        border-radius: 6px;
+                        a{
+                            white-space: nowrap;
+                            @include headingTag(1rem,400,white);
+                            text-decoration: none;
+                        }
+                    }
+                    .buyButton{
+                        background-color: $--color-02;
+                    }
+                    .infoBoutton{
+                        border: 1px solid $--color-02;
+                        a{
+                            color: $--color-02;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

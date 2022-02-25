@@ -1,0 +1,14 @@
+:root{
+  --color-01: rgb(242,199,129);
+  --color-02: rgb(255,140,145);
+  --color-03: rgb(127,92,120);
+}
+body {
+  margin: 0;
+  font-family: Roboto !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.container{
+  max-width: 95% !important;
+}

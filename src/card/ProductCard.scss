@@ -1,0 +1,78 @@
+$--color-01: rgb(242,199,129);
+$--color-02: rgb(255,140,145);
+$--color-03: rgb(127,92,120);
+@mixin boxRounded ($redius, $border, $shadow) {
+    border-radius: $redius !important;
+    border: $border !important;
+    box-shadow: $shadow !important;
+}
+@mixin headingTag ($size,$wight,$color) {
+    font-size: $size !important;
+    font-weight: $wight !important;
+    color: $color !important;
+}
+.css-bhp9pd-MuiPaper-root-MuiCard-root{
+    padding: 0px;
+    margin: 0px 30px;
+    background: white;
+    box-shadow: 0px 0px 10px 0px #0000001a !important;
+        .css-o69gx8-MuiCardMedia-root{
+            height: 200px !important;
+            width: 100% !important;
+            border-bottom: 3px #f3f3f3 solid;
+        }
+        .css-46bh2p-MuiCardContent-root{
+            padding: 25px 20px;
+                .productCard_info_star{
+                    &_icon{
+                        height: 100%;
+                        svg{
+                            fill: #cfcfcf !important;
+                            width: 0.8rem !important;
+                            height: 0.8rem !important;
+                            margin-right: 5px !important;
+                            &.active{
+                                fill: $--color-02 !important;
+                            }
+                        }
+                    }
+                    &_Num{
+                        display: flex;
+                        border-left: 1px #bcbcbc solid !important;
+                        padding: 0px 5px !important;
+                        p{
+                            @include headingTag(14px,400,$--color-02);
+                            margin-bottom: 0px!important;
+                        }
+                    }
+                }
+                .productCard_info_name{
+                    margin-top: 10px;
+                    h2{
+                        @include headingTag(0.9rem,600,black);
+                        margin-bottom: 5px!important;
+                    }
+                }
+        }
+        .css-1t6e9jv-MuiCardActions-root{ 
+            padding: 0px 25px;
+        .productCard_price{
+            .discountPrice{
+                @include headingTag(1.2rem,700,$--color-02);
+            }
+            .price{
+                @include headingTag(0.9rem,700,#bcbcbc);
+                text-decoration-line: line-through!important;
+            }
+            border-top: 2px #f3f3f3 solid;
+        }
+        }
+    }
+@media only screen and (max-width: 1300px){
+    .css-bhp9pd-MuiPaper-root-MuiCard-root .css-o69gx8-MuiCardMedia-root {
+        height: 160px !important;
+    }
+    .css-bhp9pd-MuiPaper-root-MuiCard-root .css-46bh2p-MuiCardContent-root {
+        padding: 15px 20px 5px;
+    }
+}

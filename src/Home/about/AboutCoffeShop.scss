@@ -1,0 +1,36 @@
+@mixin headingTag ($size,$wight,$color) {
+    font-size: $size;
+    font-weight: $wight;
+    color: $color;
+}
+.aboutShop{
+    &_title{
+        h2{
+            @include headingTag(1.5rem,800,black);
+        }
+    }
+    &_info{
+        &_item{
+            text-align: center;
+            &_img{
+                img{
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+            &_info{
+                h4{
+                    @include headingTag(1rem,600,black);
+                }
+                p{
+                    @include headingTag(0.8rem,400,black);
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1100px) {
+    .aboutShop_info_item {
+        width: 20%;
+    }
+}

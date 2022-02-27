@@ -1,6 +1,9 @@
 .header_top{
     height: 80px;
 }
+.header_top div.col-3{
+    width: 22%;
+}
 .web_logo{
     width: 100px;
 }
@@ -27,6 +30,20 @@
     white-space: nowrap;
     color: black;
     text-decoration: none;
+    position: relative;
+}
+.Header_link__item a::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 1.5px;
+    background-color: var(--color-01);
+    bottom: -7px;
+    left: 0px;
+    transition: 0.7s ease-out;
+}
+.Header_link__item:hover.Header_link__item a::after{
+    width: 100%;
 }
 .header_top__search input::placeholder{
     font-size: 12px;
@@ -66,4 +83,75 @@
     border-radius: 50%;
     font-size: 12px;
     font-weight: 500;
+}
+@media only screen and (max-width: 1024px){
+    .header_top {
+        height: 60px;
+    }
+    .header_top__number{
+        padding: 7px;
+    }
+    .header_top__number h3{
+        font-size: 0.75rem;
+    }
+    .web_logo{
+        width: 80px;
+    }
+    .header_top__search{
+        padding: 0px 5px;
+    }
+    .header_top__Icon{
+        width: 18%;
+    }
+}
+@media only screen and (max-width: 900px){
+    .header_top div.col-3 {
+        width: 23%;
+    }
+    .header_top__favorite h4, .header_top__favorite span {
+        font-size: 0.8rem;
+    }
+    .header_top__favorite svg, .header_top__shop svg {
+        width: 1rem;
+        height: 1rem;
+    }
+    .header_top__shop span {
+        width: 12px;
+        height: 12px;
+        font-size: 10px;
+    }
+    .Header_link__item {
+        width: 18%;
+    }
+    .Header_link__item a {
+        font-size: 0.8rem;
+    }
+}
+@media only screen and (max-width: 800px){
+    .header_top__search {
+        width: 52%;
+    }
+    .header_top div.col-3 {
+        width: 26%;
+    }
+    .header_top__number h3 {
+        font-size: 0.67rem;
+    }
+    .header_top__Icon {
+        width: 22%;
+    }
+    .Header_link_box{
+        width: 60%;
+    }
+    .Header_link_Member{
+        width: 25%;
+    }
+    .Header_link_Member ul li{
+        width: 38%;
+    }
+}
+@media only screen and (max-width: 768px){
+    .header_top div.col-3 {
+        width: 26%;
+    }
 }

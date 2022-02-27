@@ -1,5 +1,8 @@
+.ProductsSlider .mySwiper .swiper-wrapper{
+    margin-top: 40px;
+}
 .ProductsSlider .swiper-pagination{
-    top: 40px;
+    top: 0px;
     display: flex;
     flex-direction: row;
     right: auto;
@@ -30,17 +33,22 @@
     right: 54px !important;
     left: auto !important;
 }
+.ProductsSlider.container{
+    height: 70%;
+}
+.ProductsSlider .mySwiper{
+    width: 85%;
+}
 @media only screen and (max-width: 1300px){
     .ProductsSlider .swiper-pagination {
-        top: 25px;
+        top: 10px;
     }
     .ProductsSlider .swiper-scrollbar {
         top: 60px;
     }
 }
-@media only screen and (max-width: 1100px){
-    .css-bhp9pd-MuiPaper-root-MuiCard-root {
-        margin: 0px 20px 0px 0px;
-        width: 19%;
+@media only screen and (max-width: 768px){
+    .ProductsSlider .swiper-button-prev, .ProductsSlider .swiper-button-next {
+        bottom: 30px !important;
     }
 }

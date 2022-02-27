@@ -7,13 +7,11 @@ $--color-03: rgb(127,92,120);
     box-shadow: $shadow !important;
 }
 @mixin headingTag ($size,$wight,$color) {
-    font-size: $size !important;
-    font-weight: $wight !important;
-    color: $color !important;
+    font-size: $size;
+    font-weight: $wight;
+    color: $color;
 }
 .css-bhp9pd-MuiPaper-root-MuiCard-root{
-    padding: 0px;
-    margin: 0px 30px;
     background: white;
     box-shadow: 0px 0px 10px 0px #0000001a !important;
         .css-o69gx8-MuiCardMedia-root{
@@ -28,8 +26,8 @@ $--color-03: rgb(127,92,120);
                         height: 100%;
                         svg{
                             fill: #cfcfcf !important;
-                            width: 0.8rem !important;
-                            height: 0.8rem !important;
+                            width: 0.8rem ;
+                            height: 0.8rem;
                             margin-right: 5px !important;
                             &.active{
                                 fill: $--color-02 !important;
@@ -68,11 +66,38 @@ $--color-03: rgb(127,92,120);
         }
         }
     }
+    .ProductCard_item{
+        margin: 0px 30px 0px 0px;
+        padding: 0px;
+        text-decoration: none;
+    }
 @media only screen and (max-width: 1300px){
     .css-bhp9pd-MuiPaper-root-MuiCard-root .css-o69gx8-MuiCardMedia-root {
         height: 160px !important;
     }
     .css-bhp9pd-MuiPaper-root-MuiCard-root .css-46bh2p-MuiCardContent-root {
         padding: 15px 20px 5px;
+    }
+}
+@media only screen and (max-width: 1024px){
+    .ProductCard_item {
+        margin: 0px 15px 0px 0px;
+        width: 19%;
+    }
+    .productCard_info_name h2 {
+        font-size: 0.85rem !important;
+    }
+    .productCard_info_star_icon svg {
+        width: 0.7rem !important;
+        height: 0.7rem !important;
+    }
+    .productCard_price{
+        padding-top: 0.7rem !important;
+    }
+    .productCard_price .discountPrice {
+        font-size: 1rem !important;
+    }
+    .productCard_price .price {
+        font-size: 0.85rem;
     }
 }

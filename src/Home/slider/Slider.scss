@@ -62,7 +62,7 @@ $--color-03: rgb(127,92,120);
             &_img{
                 @include boxRounded(50%,none,0px 0px 1px 2px #c6c6c6);
                 padding: 10px !important;
-                height: 300px;
+                height: 350px;
                 img{
                     border-radius: 50%;
                 }
@@ -133,5 +133,57 @@ $--color-03: rgb(127,92,120);
                 }
             }
         }
+    }
+}
+@media only screen and (max-width: 1100px){
+    .swiper .slider_info_img{
+        height: 300px;
+    }
+}
+@media only screen and (max-width: 900px){
+    .swiper .slider {
+        height: 73vh;
+    }
+    .swiper .slider_info_text_name h2 {
+        font-size: 1.3rem;
+    }
+    .swiper .slider_info_text_discount h3 {
+        font-size: 1.1rem;
+    }
+    .swiper .slider_info_text_price .discountPrice, .swiper .slider_info_text_price .price {
+        font-size: 1.5rem;
+    }
+    .swiper .slider_info_text_button .buyButton a, .swiper .slider_info_text_button .infoBoutton a {
+        font-size: 0.9rem;
+    }
+    .swiper-button-next {
+        right: 15px !important;
+    }
+    .swiper .slider_info_img{
+        height: 250px;
+    }
+}
+@media only screen and (max-width: 768px){
+    .swiper .slider div.col-10 {
+        width: 100%;
+    }
+    .slider_info_text{
+        width: 50%;
+    }
+    .swiper .slider_info_text_star_svg svg {
+        width: 0.6rem;
+        height: 0.6rem;
+    }
+    .swiper .slider_info_text_name h2 {
+        font-size: 1.15rem;
+        margin: 10px 0px;
+        
+    }
+    .swiper .slider_info_text_discount h3 {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+    .swiper .slider_info_text_price .discountPrice, .swiper .slider_info_text_price .price {
+        font-size: 1.3rem;
     }
 }

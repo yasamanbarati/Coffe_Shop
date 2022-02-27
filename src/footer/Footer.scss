@@ -95,3 +95,36 @@ $--color-02: rgb(255,140,145);
         }
     }
 }
+@media only screen and (max-width: 900px){
+    .footer_info_box_info p{
+        font-size: 0.7rem !important;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .footer_info_box_title h2 {
+        font-size: 1.3rem !important;
+    }
+    .footer_info_links_item_title h4,
+    .footer_info_social_title h4 {
+        font-size: 1rem !important;
+    }
+    .footer_info_links_item_links ul li a {
+        font-size: 0.75rem !important;
+    }
+    .footer_info_social_info p {
+        font-size: 0.8rem !important;
+    }
+    .footer_info_social_svg svg {
+        margin-right: 16px;
+        width: 20px;
+        height: 20px;
+    }
+}
+@media only screen and (max-width: 768px){
+    .footer_info_links{
+        width: 35%;
+    }
+}

@@ -26,8 +26,16 @@ const NewsBoxSlider = () => {
     return (
         <Fragment>
             <Swiper
-                slidesPerView={2}
-                spaceBetween={30}
+                breakpoints={{
+                    300: {
+                        slidesPerView: 2,
+                        spaceBetween: 0,
+                    },
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 30,
+                    },
+                }}
                 slidesPerGroup={2}
                 loop={true}
                 loopFillGroupWithBlank={true}

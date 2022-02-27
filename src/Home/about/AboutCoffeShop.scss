@@ -34,3 +34,12 @@
         width: 20%;
     }
 }
+@media only screen and (max-width: 900px) {
+    .aboutShop_info_item_info p{
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}

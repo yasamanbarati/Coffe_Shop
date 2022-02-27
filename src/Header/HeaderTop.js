@@ -25,7 +25,7 @@ const HeaderTop = () => {
                             <Search/>
                         </a>
                     </div>
-                    <div className='col-2 d-flex justify-content-evenly align-items-center'>
+                    <div className='col-2 header_top__Icon d-flex justify-content-evenly align-items-center'>
                         <div className='header_top__favorite d-flex justify-content-start align-items-center'>
                         <Heart />
                         <span>0</span>

@@ -6,7 +6,7 @@ const HeaderLinks = () => {
       <Fragment>
         <div className='container mt-2'>
           <div className='row justify-content-center align-items-baseline'>
-            <div className='col-6'>
+            <div className='col-6 Header_link_box'>
               <ul className='row justify-content-start align-items-center'>
                 <li className='col-2 Header_link__item'>
                     <Link  to="/">Home</Link>
@@ -22,7 +22,7 @@ const HeaderLinks = () => {
                 </li>
               </ul>
             </div>
-            <div className='col-4'>
+            <div className='col-4 Header_link_Member'>
               <ul className='row justify-content-end align-items-baseline'>
                 <li className='col-2 Header_link__item'>
                     <Link  to="/Login">login</Link>

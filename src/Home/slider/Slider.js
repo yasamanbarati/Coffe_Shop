@@ -27,7 +27,7 @@ const Slider = ({product}) => {
                                 <h2>{product.name}</h2>
                             </div>
                             <div className='slider_info_text_discount'>
-                                <h3>{product.discount} discount</h3>
+                                <h3>{product.discount}% discount</h3>
                             </div>
                             <div className='slider_info_text_price mt-4 d-flex justify-content-start align-items-baseline'>
                                 <h3 className='discountPrice'>480$</h3>

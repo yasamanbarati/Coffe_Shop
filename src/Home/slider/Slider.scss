@@ -11,6 +11,14 @@ $--color-03: rgb(127,92,120);
     font-weight: $wight;
     color: $color;
 }
+.Main_slider{
+    img{
+        width: 60%;
+        bottom: -80px;
+        left: -40px;
+        right: auto;
+    }
+}
 .swiper{
     &-button-prev,
     &-button-next{
@@ -56,12 +64,14 @@ $--color-03: rgb(127,92,120);
             }
         }
     }
+
 .slider{
         height: 80vh;
         &_info{
             &_img{
-                @include boxRounded(50%,none,0px 0px 1px 2px #c6c6c6);
-                padding: 10px !important;
+                background-image: url('../../image/backgroundProducts.png');
+                clip-path: circle(50%);
+                @include boxRounded(50%,none,0px 0px 3px 2px #f9f9f9);
                 height: 350px;
                 img{
                     border-radius: 50%;

@@ -7,6 +7,8 @@ import "swiper/css/navigation";
 import { Pagination, Navigation, Mousewheel, Keyboard } from "swiper";
 import Slider from './Slider';
 
+import BackSlider from '../../image/InkedbackgroundSlider_LI.jpg';
+
 const products = [
     {
         id: 'p1',
@@ -44,32 +46,35 @@ const SliderItem = () => {
 
     return (
         <Fragment>
-            <div className='container'>
-                <Swiper
-                    cssMode={true}
-                    navigation={true}
-                    pagination={true}
-                    mousewheel={true}
-                    keyboard={true}
-                    autoplay={{
-                        delay: 5000,
-                        disableOnInteraction: false,
-                    }}
-                    slidesPerView={"auto"}
-                    modules={[Pagination, Navigation, Mousewheel, Keyboard]}
-                    className="mySwiper"
-                    pagination={{
-                        clickable: true,
-                    }}
-                >
-                    {ProductsInfo.map((item, index) => {
-                        return (
-                            <SwiperSlide>
-                                <Slider product={item} />
-                            </SwiperSlide>
-                        )
-                    })}
-                </Swiper>
+            <div className='position-relative Main_slider'>
+                <img src={BackSlider} className='position-absolute' />
+                <div className='container'>
+                    <Swiper
+                        cssMode={true}
+                        navigation={true}
+                        pagination={true}
+                        mousewheel={true}
+                        keyboard={true}
+                        autoplay={{
+                            delay: 5000,
+                            disableOnInteraction: false,
+                        }}
+                        slidesPerView={"auto"}
+                        modules={[Pagination, Navigation, Mousewheel, Keyboard]}
+                        className="mySwiper"
+                        pagination={{
+                            clickable: true,
+                        }}
+                    >
+                        {ProductsInfo.map((item, index) => {
+                            return (
+                                <SwiperSlide>
+                                    <Slider product={item} />
+                                </SwiperSlide>
+                            )
+                        })}
+                    </Swiper>
+                </div>
             </div>
         </Fragment>
     );

@@ -35,7 +35,7 @@ const Slider = ({product}) => {
                             </div>
                             <div className='slider_info_text_button mt-4 d-flex justify-content-start align-items-baseline'>
                                 <div className='buyButton'>
-                                    <Link to="/">Buy</Link>
+                                    <Link to="/Single">Buy</Link>
                                 </div>
                                 <div className='infoBoutton mx-5'>
                                     <Link to="/Our_products">Deseription</Link>

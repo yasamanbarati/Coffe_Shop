@@ -6,9 +6,9 @@
     display: flex;
     flex-direction: row;
     right: auto;
-    left: -35px !important;
-    justify-content: flex-end;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: flex-end;
+    z-index: -10;
 }
 .ProductsSlider .swiper-scrollbar{
     top: 85px;
@@ -24,20 +24,22 @@
 .ProductsSlider .swiper-button-prev,
 .ProductsSlider .swiper-button-next {
     bottom: 0px !important;
+    right: 51.5% !important;
+    z-index: 10;
+}
+.ProductsSlider .swiper-button-next{
+    left: 51.5% !important;
 }
 .swiper-button-next:after, .swiper-button-prev:after{
     font-size: 15px !important;
     color: black;
-}
-.swiper-button-prev{
-    right: 54px !important;
-    left: auto !important;
 }
 .ProductsSlider.container{
     height: 70%;
 }
 .ProductsSlider .mySwiper{
     width: 85%;
+    top: -60px;
 }
 @media only screen and (max-width: 1300px){
     .ProductsSlider .swiper-pagination {

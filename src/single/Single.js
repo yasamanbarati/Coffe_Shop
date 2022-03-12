@@ -7,7 +7,7 @@ const Single = () => {
 
     return (
         <Fragment>
-            <Header />
+            {/* <Header /> */}
             <Single_Products />
             <Footer />
         </Fragment>

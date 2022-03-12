@@ -19,7 +19,7 @@ const SingleSlider_Product = () => {
                     "--swiper-pagination-color": "#fff",
                 }}
                 loop={true}
-                spaceBetween={10}
+                spaceBetween={40}
                 navigation={true}
                 thumbs={{ swiper: thumbsSwiper }}
                 modules={[FreeMode, Navigation, Thumbs]}

@@ -14,3 +14,20 @@
     border-bottom: 0.01rem var(--color-01) solid !important;
     font-size: 0.86rem !important;
 }
+@media only screen and (max-width: 1300px){
+    .InfoTable_th{
+        font-size: 1rem !important;
+    }
+    .InfoTable_td {
+        font-size: 0.9rem !important;
+        padding-left: 0px !important;
+    }
+}
+@media only screen and (max-width: 1000px){
+    .InfoTable_th{
+        font-size: 0.9rem !important;
+    }
+    .InfoTable_td {
+        font-size: 0.8rem !important;
+    }
+}

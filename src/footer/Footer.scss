@@ -152,6 +152,20 @@ $--color-02: rgb(255,140,145);
         margin-top: 5px;
     }
 }
+
+@media only screen and (max-width: 500px){
+    .footer_background{
+        position: relative;
+        height: 165px;
+        img{
+            position: absolute;
+            transform: scale3d(1.8, 1.5, 1.8);
+        }
+    }
+    .footer_info{
+        margin-top: 40px;
+    }
+}
 @media only screen and (max-width: 400px){
     .footer_info_links,
     .footer_info_social{

@@ -22,7 +22,7 @@ $--color-02: rgb(255,140,145);
         &Name{
             .Products_name{
                 h2{
-                    @include headingTag(2rem,800,black);
+                    @include headingTag(1.8rem,800,black);
                 }
             }
             .Products_sharing{
@@ -30,6 +30,7 @@ $--color-02: rgb(255,140,145);
                     svg{
                         width: 0.9rem;
                         fill: #b9b9b9;
+                        margin-right: 5px;
                         &.active{
                             fill: $--color-02;
                         }
@@ -67,7 +68,7 @@ $--color-02: rgb(255,140,145);
                 }
                 .price{
                     h3{
-                        @include headingTag(2rem,800,black);}
+                        @include headingTag(1.9rem,800,black);}
                     p{
                         @include headingTag(1.5rem,600,#bcbcbc);
                         text-decoration: line-through;
@@ -130,5 +131,82 @@ $--color-02: rgb(255,140,145);
                 }
             }
         }
+    }
+}
+@media only screen and (max-width: 1300px){
+    .singleInfoName .Products_sharing .star p {
+        margin-left: 12px;
+        margin-right: 10px !important;
+    }
+    .singleInfoPrice .product_price .price p {
+        margin-left: 30px !important;
+    }
+    .css-quj9j6-MuiTable-root {
+        min-width: auto !important;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    .singleInfoPrice .product_price {
+        width: 40%;
+    }
+    .singleInfoPrice .product_shop {
+        width: 56%;
+    }
+    .singleInfoPrice .product_price .price h3 {
+        font-size: 1.7rem;
+    }
+    .singleInfoPrice .product_price .price p {
+        font-size: 1.3rem;
+    }
+    .singleInfoPrice .product_shop_number_num .product_num {
+        height: 45px;
+        width: 70px;
+    }
+    .singleInfoPrice .product_shop_number_num .product_num div button {
+        width: 20px;
+        height: 20px;
+    }
+    .singleInfoPrice .product_shop_number_num .product_num div button svg {
+        width: 12px;
+    }
+    .singleInfoPrice .product_shop_number_fiv button {
+        padding: 0px 10px !important;
+    }
+}
+@media only screen and (max-width: 800px){
+    .singleInfoName .Products_name h2 {
+        font-size: 1.5rem;
+    }
+    .singleInfoPrice .product_price .price h3 {
+        font-size: 1.5rem;
+    }
+    .singleInfoPrice .product_price .price p {
+        font-size: 1rem;
+    }
+    .singleInfoName .Products_sharing .sharing .Comparison button p,
+     .singleInfoName .Products_sharing .sharing .sharing_box button p {
+        font-size: 0.7rem;
+    }
+    .singleInfoName .Products_sharing .star svg {
+        width: 0.8rem;
+    }
+    .singleInfoPrice .product_shop_number_num .product_num {
+        height: 50px;
+        width: 90px;
+    }
+}
+@media only screen and (max-width: 700px){
+    .single{
+        flex-direction: column;
+    }
+    .singleInfoPrice .product_price{
+        width: 40% !important;
+    }
+    .singleInfoPrice .product_shop{
+        width: 60% !important;
+    }
+    .singleInfoName .Products_sharing .star p{
+        margin-bottom: 0px!important;
     }
 }

@@ -128,6 +128,9 @@
     }
 }
 @media only screen and (max-width: 800px){
+    .web_logo {
+        width: 70px;
+    }
     .header_top__search {
         width: 52%;
     }
@@ -138,7 +141,8 @@
         font-size: 0.67rem;
     }
     .header_top__Icon {
-        width: 22%;
+        width: 18%;
+        padding-left: 0px;
     }
     .Header_link_box{
         width: 60%;
@@ -150,8 +154,8 @@
         width: 38%;
     }
 }
-@media only screen and (max-width: 768px){
-    .header_top div.col-3 {
-        width: 26%;
+@media only screen and (max-width: 669px){
+    .Header_link_box {
+        width: 72%;
     }
 }

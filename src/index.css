@@ -1,5 +1,5 @@
 :root{
-  --color-01: rgb(242,199,129);
+  --color-01: rgb(255 154 121);
   --color-02: rgb(255,140,145);
   --color-03: rgb(127,92,120);
 }
@@ -11,4 +11,9 @@ body {
 }
 .container{
   max-width: 95% !important;
+}
+@media only screen and (max-width: 600px) {
+  .container {
+    max-width: 98% !important;
+  }
 }

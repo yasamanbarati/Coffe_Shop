@@ -6,12 +6,14 @@ import AboutCoffeShop from './about/AboutCoffeShop';
 import NewsBox from './news/NewsBox';
 import Comment from './comment/Comment';
 import Footer from '../footer/Footer';
+import MenuPage from '../menu/MenuPage';
 
 const Home = () => {
 
   return (
     <Fragment>
-        <Header />
+        {/* <Header /> */}
+        {/* <MenuPage /> */}
         <SliderItem />
         <SliderProductsBox />
         <AboutCoffeShop />

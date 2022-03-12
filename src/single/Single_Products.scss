@@ -1,0 +1,134 @@
+$--color-01: rgb(248, 110, 56);
+$--color-02: rgb(255,140,145);
+@mixin boxRounded ($redius, $border, $shadow) {
+    border-radius: $redius;
+    border: $border;
+    box-shadow: $shadow ;
+}
+@mixin headingTag ($size,$wight,$color) {
+    font-size: $size;
+    font-weight: $wight;
+    color: $color;
+}
+.single{
+    &Slider{
+        &_Heart{
+            svg{
+                fill: #b9b9b9;
+            }
+        }
+    }
+    &Info{
+        &Name{
+            .Products_name{
+                h2{
+                    @include headingTag(2rem,800,black);
+                }
+            }
+            .Products_sharing{
+                .star{
+                    svg{
+                        width: 0.9rem;
+                        fill: #b9b9b9;
+                        &.active{
+                            fill: $--color-02;
+                        }
+                    }
+                    p{
+                        @include headingTag(1rem,600,$--color-02);
+                    }
+                }
+                .sharing{
+                    .Comparison,
+                    .sharing_box{
+                        button{
+                            border-radius: 15px;
+                            padding: 6px 10px;
+                            svg{
+                                width: 1rem;
+                                height: 1rem;
+                                margin-right: 8px;
+                            }
+                            p{
+                                @include headingTag(0.8rem,300,black);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &Price{
+            .product_price{
+                width: 27%;
+                &Caption{
+                    p{
+                        @include headingTag(0.9rem,400,#bcbcbc);
+                    }
+                }
+                .price{
+                    h3{
+                        @include headingTag(2rem,800,black);}
+                    p{
+                        @include headingTag(1.5rem,600,#bcbcbc);
+                        text-decoration: line-through;
+                    }
+                }
+            }
+            .product_shop{
+                &_number{
+                    &_num{
+                        p{
+                            @include headingTag(0.8rem,400,#bcbcbc);
+                        }
+                        .product_num{
+                            height: 50px;
+                            width: 90px;
+                            border-radius: 10px;
+                            background-color: #f8f8f8;
+                            p{
+                                margin-bottom: -5px;
+                                padding-left: 10px;
+                                @include headingTag(1.2rem,600,black);
+                            }
+                            div{
+                                display: inline-grid;
+                                height: 100%;
+                                button{
+                                    background-color: transparent;
+                                    border: none;
+                                    padding: 0px;
+                                    padding-right: 10px;
+                                    svg{
+                                        width: 15px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &_fiv{
+                        button{
+                            height: 55%;
+                            background-color: #f8f8f8;
+                            svg{
+                                width: 20px;
+                                height: 20px;
+                                fill: #b9b9b9;
+                            }
+                        }
+                    }
+                }
+                &_Buy{
+                    button{
+                        @include boxRounded(10px,none,none);
+                        background-color: $--color-01;
+                        padding: 10px 35px;
+                        p{
+                            @include headingTag(1rem,600,#fff);
+                            margin-bottom: 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

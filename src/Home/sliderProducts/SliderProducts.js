@@ -62,8 +62,15 @@ const SliderProducts = () => {
                         clickable: true,
                     }}
                     breakpoints={{
-                        600: {
+                        0:{
+                            slidesPerView: 1,
+                        },
+                        500:{
                             slidesPerView: 2,
+                            spaceBetween: 10,
+                        },
+                        600: {
+                            slidesPerView: 3,
                             spaceBetween: 10,
                         },
                         700: {
@@ -72,7 +79,7 @@ const SliderProducts = () => {
                         },
                         900: {
                             slidesPerView: 4,
-                            spaceBetween: 30,
+                            spaceBetween: 20,
                         },
                     }}
                     navigation={true}

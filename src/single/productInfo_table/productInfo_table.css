@@ -1,0 +1,16 @@
+.css-11xur9t-MuiPaper-root-MuiTableContainer-root{
+    box-shadow: none !important;
+}
+.InfoTable{
+    border-bottom: none;
+    margin-top: 1rem;
+}
+.InfoTable_th{
+    font-weight: 600 !important;
+    line-height: 1rem !important;
+    border-bottom: none !important;
+}
+.InfoTable_td{
+    border-bottom: 0.01rem var(--color-01) solid !important;
+    font-size: 0.86rem !important;
+}

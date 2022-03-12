@@ -28,12 +28,12 @@ const NewsBoxSlider = () => {
             <Swiper
                 breakpoints={{
                     300: {
-                        slidesPerView: 2,
-                        spaceBetween: 0,
-                    },
-                    768: {
-                        slidesPerView: 2,
+                        slidesPerView: 1,
                         spaceBetween: 30,
+                    },
+                    850: {
+                        slidesPerView: 2,
+                        spaceBetween: 20,
                     },
                 }}
                 slidesPerGroup={2}

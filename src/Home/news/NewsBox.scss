@@ -107,9 +107,24 @@
         overflow: hidden;
         text-overflow: ellipsis;
     }
+    .newsBox_slider_item {
+        height: 45vh;
+    }
 } 
 @media only screen and (max-width: 768px){
     .newsBox .swiper-slide{
         width: 100% !important;
+    }
+} 
+@media only screen and (max-width: 400px){
+    .newsBox_slider_item_img{
+        display: none;
+    }
+    .newsBox_slider_item_info {
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
     }
 }

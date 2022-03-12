@@ -43,3 +43,19 @@
         text-overflow: ellipsis;
     }
 }
+@media only screen and (max-width: 600px){
+    .aboutShop_info_item_img img {
+        width: 80px;
+        height: 80px;
+    }
+    .aboutShop_info_item_info h4 {
+        font-size: 0.85rem;
+        margin-top: 0.5rem;
+    }
+    .aboutShop_info_item_info p {
+        font-size: 0.7rem;
+    }
+    .aboutShop_info_item {
+        width: 40%;
+    }
+}

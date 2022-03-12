@@ -23,20 +23,11 @@ const ProductCard = ({ Data }) => {
             attStar.push(j);
         }
     }
-
-    // const star_fill = document.getElementsByClassName('starSvg');
-    // if (star_fill[0].className.contains("starSvg")){
-    //     star_fill[0].classList.remove("active");
-    // }
-    // else{
-    //     star_fill[0].classList.add("active");
-    // }
-
     const [state, setState] = useState(true)
-
+    
     return (
         <Fragment>
-            <Link to="/Our_products" className='col-2 ProductCard_item'>
+            <Link to="/Single" className='col-2 ProductCard_item'>
                 <Card className='ProductCard'>
                     <CardMedia className='productCard_image'
                         component="img"

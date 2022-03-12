@@ -50,3 +50,31 @@
         font-size: 0.8rem;
     }
 }
+@media only screen and (max-width: 600px){
+    .sliderProduct_Info {
+        width: 60%;
+        bottom: 30px;
+    }
+    .productsBox{
+        right: -10px;
+    }
+    .backgroundBoxL{
+        display: none;
+    }
+    .backgroundBoxR{
+        bottom: 165px !important;
+        width: 60%;
+        clip-path: inset(0% 56% 0% 0%);
+    }
+}
+@media only screen and (max-width: 500px){
+    .productsBox {
+        right: 0px;
+    }
+    .productsBox {
+        height: 130vh;
+    }
+    .backgroundBoxR {
+        bottom: 180px !important;
+    }
+}

@@ -101,3 +101,49 @@ $--color-03: rgb(127,92,120);
         font-size: 0.85rem;
     }
 }
+@media only screen and (max-width: 669px){
+    .css-bhp9pd-MuiPaper-root-MuiCard-root .css-o69gx8-MuiCardMedia-root {
+        height: 145px !important;
+    }
+    .ProductsSlider .swiper-pagination {
+        bottom: 9.5%;
+    }
+}
+@media only screen and (max-width: 500px){
+    .ProductCard{
+        width: 70%;    
+        height: 70vh;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .css-bhp9pd-MuiPaper-root-MuiCard-root .css-o69gx8-MuiCardMedia-root {
+        height: 230px !important;
+    }
+    .ProductsSlider .swiper-pagination {
+        bottom: 1.5% !important;
+    }
+    .productCard_info_name{
+        margin-top: 15px !important;
+    }
+    .productCard_info_name h2 {
+        font-size: 1.3rem !important;
+    }
+    .productCard_price .discountPrice {
+        font-size: 1.6rem !important;
+    }
+    .productCard_price .price {
+        font-size: 1.2rem !important;
+    }
+    .productCard_info_star_icon svg {
+        width: 1rem !important;
+        height: 1rem !important;
+        margin-right: 8px !important;
+    }
+    .css-bhp9pd-MuiPaper-root-MuiCard-root .css-46bh2p-MuiCardContent-root{
+        padding-top: 0px;
+        flex: auto;
+        margin-top: 15px;
+    }
+}
